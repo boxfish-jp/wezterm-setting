@@ -1,0 +1,33 @@
+-- Pull in the wezterm API
+local wezterm = require("wezterm")
+
+-- This table will hold the configuration.
+local config = {}
+
+-- In newer versions of wezterm, use the config_builder which will
+-- help provide clearer error messages
+if wezterm.config_builder then
+	config = wezterm.config_builder()
+end
+
+-- This is where you actually apply your config choices
+config.keys = require("keybinds").keys
+config.key_table = require("keybinds").key_table
+
+-- For example, changing the color scheme:
+config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
+config.window_background_opacity = 0.7
+config.win32_system_backdrop = "Acrylic"
+config.color_scheme = "Catppuccin Mocha"
+config.font = wezterm.font("Firge35Nerd Console")
+config.use_ime = true
+config.window_decorations = "RESIZE"
+config.window_frame = {
+	inactive_titlebar_bg = "none",
+	active_titlebar_bg = "none",
+}
+-- グラフィックのバグがあるための回避
+config.front_end = "WebGpu"
+
+-- and finally, return the configuration to wezterm
+return config
