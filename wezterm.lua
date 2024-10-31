@@ -26,8 +26,6 @@ config.window_frame = {
 	inactive_titlebar_bg = "none",
 	active_titlebar_bg = "none",
 }
--- グラフィックのバグがあるための回避
-config.front_end = "WebGpu"
 
 -- and finally, return the configuration to wezterm
 return config
