@@ -12,11 +12,11 @@ end
 
 -- This is where you actually apply your config choices
 config.keys = require("keybinds").keys
-config.key_table = require("keybinds").key_table
+config.key_tables = require("keybinds").key_tables
+config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
 
 -- For example, changing the color scheme:
-config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
-config.window_background_opacity = 0.7
+config.window_background_opacity = 0.3
 config.win32_system_backdrop = "Acrylic"
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("Firge35Nerd Console")
