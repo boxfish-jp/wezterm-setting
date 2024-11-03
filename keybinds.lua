@@ -113,7 +113,7 @@ return {
 		-- { key = "n", mods = "CTRL", action = act.SpawnWindow },
 		{ key = "n", mods = "SUPER", action = act.SpawnWindow },
 		{ key = "p", mods = "SHIFT|CTRL", action = act.ActivateCommandPalette },
-		{ key = "r", mods = "CTRL", action = act.ReloadConfiguration },
+		-- { key = "r", mods = "CTRL", action = act.ReloadConfiguration },
 		{ key = "r", mods = "SUPER", action = act.ReloadConfiguration },
 		{ key = "t", mods = "CTRL", action = act.SpawnTab("CurrentPaneDomain") },
 		{ key = "t", mods = "SUPER", action = act.SpawnTab("CurrentPaneDomain") },
