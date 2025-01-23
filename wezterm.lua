@@ -17,7 +17,7 @@ config.default_prog = { "C:\\Program Files\\Git\\bin\\bash.exe" }
 
 -- For example, changing the color scheme:
 config.window_background_opacity = 0.3
-config.win32_system_backdrop = "Acrylic"
+-- config.win32_system_backdrop = "Acrylic"
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("Cica-Regular")
 config.font_size = 14.0
